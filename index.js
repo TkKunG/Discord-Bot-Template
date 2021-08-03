@@ -17,15 +17,15 @@ client.on('message', message => {
 	console.log(message.content);
 });
 
-//Embed Discord Code
-// client.on('message',(msg) =>{
-// 	if (msg.content === '!nv'){
-// 		const t0k1 = new Discord.MessageEmbed()
-// 		.setTitle('TEXT')
-// 		.setColor('#05ffa1')
-// 		msg.channel.send(t0k1);
-// 	}
-// })
+Embed Discord Code
+client.on('message',(msg) =>{
+	if (msg.content === '!TEXT'){
+		const t0k1 = new Discord.MessageEmbed()
+		.setTitle('TEXT')
+		.setColor('#05ffa1')
+		msg.channel.send(t0k1);
+	}
+})
 client.on('message', msg => {
 	if (msg.content === '!TEXT') {
 		msg.channel.send("TEXT");
